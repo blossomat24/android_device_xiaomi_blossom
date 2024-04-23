@@ -559,9 +559,9 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.beanpod.so
-vendor/lib/hw/libSoftGatekeeper.so
+vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.beanpod.so
-vendor/lib64/hw/libSoftGatekeeper.so
+vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
