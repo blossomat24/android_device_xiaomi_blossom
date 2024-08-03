@@ -333,6 +333,10 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     libmockdrmcryptoplugin
