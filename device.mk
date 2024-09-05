@@ -120,12 +120,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audio_policy.stub \
-    libldacBT_bco \
-    libtinycompress \
-    libtinyxml \
-    libaudiofoundation \
-    libaudiofoundation.vendor \
-    libaudioroute.vendor
+    libldacBT_bco
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -177,15 +172,7 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.0.vendor \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.2.vendor \
-    android.hardware.radio@1.3.vendor \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio@1.5.vendor \
-    libpcap.vendor \
     android.hardware.radio-V1.4-java
 
 # IMS
@@ -217,11 +204,6 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
 
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v32 \
-    libui-v32
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
@@ -232,11 +214,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.1.vendor
-
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:32
@@ -246,30 +223,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
     Tag
-
-# Camera
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@1.0.vendor \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.device@3.3.vendor \
-    android.hardware.camera.device@3.4.vendor \
-    android.hardware.camera.device@3.5.vendor \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.4.vendor \
-    android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
-
-PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor \
-    libpng.vendor \
-    libutilscallstack.vendor
-
-# Media
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -283,31 +236,23 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.pixel-libperfmgr \
-    android.hardware.power@1.0.vendor \
-    android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power@1.3.vendor
+    android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     libmtkperf_client
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-V1-ndk \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service \
-    android.hardware.health@1.0
+    android.hardware.health@2.1-service
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -380,27 +325,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/novatek_ts_truly_fw.bin:recovery/root/vendor/firmware/novatek_ts_truly_fw.bin \
     vendor/xiaomi/blossom/proprietary/vendor/firmware/novatek_ts_truly_mp.bin:recovery/root/vendor/firmware/novatek_ts_truly_mp.bin
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.allocator@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.allocator@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
-
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4.vendor \
-    libmockdrmcryptoplugin \
-    libdrm \
-    libdrm.vendor
+    libmockdrmcryptoplugin
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -408,65 +335,14 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor \
-    android.hardware.keymaster@4.0.vendor \
-    libkeymaster4.vendor \
-    libkeymaster4support.vendor \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor \
-    libpuresoftkeymasterdevice.vendor \
-    libsoft_attestation_cert.vendor
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
-
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0.vendor \
-    android.hardware.sensors@2.0.vendor \
-    libsensorndkbridge
-
-# GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.0.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-focaltech.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-focaltech.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
-
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
-PRODUCT_PACKAGES += \
-    libcurl.vendor \
-    libgralloctypes.vendor \
-    libion.vendor \
-    libjsoncpp.vendor \
-    libpower.vendor \
-    libprocessgroup.vendor \
-    libsqlite.vendor \
-    libssl.vendor \
-    libui.vendor
-
-# Shims
-PRODUCT_PACKAGES += \
-    libprocessgroup_shim \
-    libshim_audio \
-    libshim_beanpod \
-    libshim_sensors \
-    libshim_ui
 
 # Cgroup
 PRODUCT_COPY_FILES += \
