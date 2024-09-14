@@ -409,7 +409,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Runtime Resource Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayBlossom \
     DialerOverlayBlossom \
     FrameworksResOverlayBlossom \
     SettingsOverlayBlossom \
