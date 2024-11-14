@@ -314,7 +314,7 @@ system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 -vendor/bin/hw/vtservice_hidl|53569543f0ea7ace6bab5c94a190b5398dba1fd0
 vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
 -vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|1ca9ae80d39a609ed69a91a6e53da8e687ffc75e
--vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so|90d390d33edd8acc1526ccb506314d4a841a6578
+-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor|90d390d33edd8acc1526ccb506314d4a841a6578
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
