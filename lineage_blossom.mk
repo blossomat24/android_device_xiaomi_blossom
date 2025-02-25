@@ -21,6 +21,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # include private signing keys
 -include vendor/niigo-priv/keys/keys.mk
 
+# AxionAOSP flags start
+# Camera
+AXION_CAMERA_REAR_INFO := 13
+AXION_CAMERA_FRONT_INFO := 5
+
+# Processor
+AXION_PROCESSOR := Mediatek_Helio_G25
+
+# Maintainer
+AXION_MAINTAINER := fukiame
+# AxionAOSP flags end
+
 PRODUCT_NAME := lineage_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
