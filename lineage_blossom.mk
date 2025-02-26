@@ -25,6 +25,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Camera
 AXION_CAMERA_REAR_INFO := 13
 AXION_CAMERA_FRONT_INFO := 5
+PRODUCT_NO_CAMERA := false
 
 # Processor
 AXION_PROCESSOR := Mediatek_Helio_G25_/_G35
