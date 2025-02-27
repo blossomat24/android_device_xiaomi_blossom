@@ -21,6 +21,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # include private signing keys
 -include vendor/niigo-priv/keys/keys.mk
 
+# always nuke audiofx
+NUKE_AUDIOFX := true
+
 # AxionAOSP flags start
 # Camera
 AXION_CAMERA_REAR_INFO := 13
