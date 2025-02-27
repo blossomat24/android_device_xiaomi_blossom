@@ -24,6 +24,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # always nuke audiofx
 NUKE_AUDIOFX := true
 
+# always append time of day
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+
 # AxionAOSP flags start
 # Camera
 AXION_CAMERA_REAR_INFO := 13
