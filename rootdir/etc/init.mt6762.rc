@@ -458,6 +458,10 @@ on post-fs-data
 
     # NFC
     mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/nfc 0770 nfc nfc
+
+    chown nfc nfc /dev/sec-nfc
+    chmod 0770 /dev/sec-nfc
 
 on boot
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
