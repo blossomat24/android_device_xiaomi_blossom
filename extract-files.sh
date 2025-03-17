@@ -68,6 +68,10 @@ function blob_fixup() {
         system_ext/lib/libsource.so)
             grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
             ;;
+        vendor/lib/libutils-v30.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
+            ;;
     esac
 }
 
