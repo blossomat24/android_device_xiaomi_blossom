@@ -147,6 +147,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.blossom
 
 # Display
+TARGET_SCREEN_DENSITY := 320
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.composer@2.1.vendor \
