@@ -106,6 +106,7 @@ vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwo.so
+vendor/lib/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/libmtcloader.so
 vendor/lib64/libwapi.so
 
