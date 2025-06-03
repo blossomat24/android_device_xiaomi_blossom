@@ -262,9 +262,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor \
-    libutils-v30 \
-    libutils-v32
+    android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
@@ -274,9 +272,6 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
-
-PRODUCT_PACKAGES += \
-    libui-v32
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
