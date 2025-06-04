@@ -128,6 +128,7 @@ lib64/libvcodec_capenc.so:system_ext/lib64/libvcodec_capenc.so
 priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@2.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # GPS
 vendor/bin/bip
