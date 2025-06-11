@@ -297,14 +297,14 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 -system_ext/bin/vtservice|3eb4c03300dfd7b0b4cdb688ea05c01f0b2bde9e
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 -system_ext/lib/libcomutils.so|fecece013b6e0570f349144fed31428387e328ae
--system_ext/lib/libimsma.so|2e4e6c28e252efa21f523a73c9ac37767a4f2753
+-system_ext/lib/libimsma.so|c2e569433c38f70a551e2d1a54e131be14541742
 -system_ext/lib/libimsma_adapt.so|ae9bcc5dd7f77c950c6c212c7939d00d4ddec403
 -system_ext/lib/libimsma_rtp.so|60bc3ca99172878b9e9d5e987a8587cfdfc1f133
 -system_ext/lib/libimsma_socketwrapper.so|855f8f14bebf857ba535a8ef952326b09eda70af
 -system_ext/lib/libmtk_vt_service.so|c69bd52fc4aa4f370ee90ca668260b98e7ccb588
 -system_ext/lib/libmtk_vt_wrapper.so;DISABLE_DEPS|f25007d81b2a19b3b0564dea9dcf8f18fe52cc30
 -system_ext/lib/libsignal.so|f483ee7399495b42337673a7d6bd6eb42ac3e206
--system_ext/lib/libsink.so|b40b1ad3435fb4ce16e66fa3c930928129857762
+-system_ext/lib/libsink.so:system_ext/lib/libsink-mtk.so;FIX_SONAME|97c63b4f52be6009c632dec9e15822ab6a4162ac
 -system_ext/lib/libsource.so|8f9c20a098a5caddd7984be6ab9dc5334040d131
 -system_ext/lib/libvcodec_cap.so|6a26d798f966d33abf540751b477aed002412883
 -system_ext/lib/libvcodec_capenc.so|329e65e13a717bbbe40b5a97476005b28455254a
