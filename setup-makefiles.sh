@@ -37,11 +37,24 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
-        com.qualcomm.qti.dpm.api@1.0 | \
-            vendor.qti.imsrtpservice@3.0)
-            echo "$1-vendor"
+        vendor.mediatek.hardware.mtkradioex@2.0)
+            echo "$1_vendor"
             ;;
-        libwpa_client) ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+function lib_to_package_fixup_system_ext_variants() {
+    if [ "$2" != "system_ext" ]; then
+        return 1
+    fi
+
+    case "$1" in
+        vendor.mediatek.hardware.videotelephony@1.0)
+            echo "$1_system_ext"
+            ;;
         *)
             return 1
             ;;
@@ -51,7 +64,8 @@ function lib_to_package_fixup_vendor_variants() {
 function lib_to_package_fixup() {
     lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
         lib_to_package_fixup_proto_3_9_1 "$1" ||
-        lib_to_package_fixup_vendor_variants "$@"
+        lib_to_package_fixup_vendor_variants "$@" ||
+        lib_to_package_fixup_system_ext_variants "$@"
 }
 
 # Initialize the helper

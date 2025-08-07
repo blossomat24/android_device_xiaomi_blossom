@@ -106,7 +106,7 @@ vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwo.so
-vendor/lib/vendor.mediatek.hardware.mtkradioex@2.0.so
+vendor/lib/vendor.mediatek.hardware.mtkradioex@2.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libmtcloader.so
 vendor/lib64/libwapi.so
 
@@ -310,7 +310,7 @@ system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
 -system_ext/lib/libvcodec_capenc.so|329e65e13a717bbbe40b5a97476005b28455254a
 -system_ext/lib/libvt_avsync.so|a70a6a62a3675a8d55f951415f9d0f00bc760052
 -system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so|f78d6cb1edcfe776b8a2f2b229c6d928f4013b6b
--system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext|fa9b5f7c9603c2eb86b94b33df2e7331c4a151b0
+-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_system_ext|fa9b5f7c9603c2eb86b94b33df2e7331c4a151b0
 -vendor/bin/hw/vtservice_hidl|53569543f0ea7ace6bab5c94a190b5398dba1fd0
 vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
 -vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|1ca9ae80d39a609ed69a91a6e53da8e687ffc75e
