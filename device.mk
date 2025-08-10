@@ -162,7 +162,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
 
@@ -424,7 +423,6 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
     libsensorndkbridge
