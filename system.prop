@@ -72,5 +72,10 @@ wifi.tethering.interface=ap0
 # Zygote
 ro.zygote.preload.enable=0
 
+# DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+# SEC NFC debugging logs
+ro.vendor.nfc.debug_level=0x4f4c
+# DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG DEBUG
+
 # Device specific properties
 import /system/etc/properties/${ro.boot.hwname}.prop
