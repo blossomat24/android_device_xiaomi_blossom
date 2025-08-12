@@ -457,7 +457,6 @@ on post-fs-data
     mkdir /data/vendor/mac_addr 0771 system system
 
     # NFC
-    mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/nfc 0770 nfc nfc
 
     chown nfc nfc /dev/sec-nfc
