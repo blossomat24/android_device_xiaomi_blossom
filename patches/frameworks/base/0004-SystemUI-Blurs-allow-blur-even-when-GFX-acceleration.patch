@@ -1,4 +1,4 @@
-From 380326b7fad5c06eb3571cff276d4bc36aa6f7f4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pulkit077 <pulkitagarwal2k1@gmail.com>
 Date: Sat, 1 Jan 2022 19:35:59 +0800
 Subject: [PATCH] SystemUI: Blurs: allow blur even when GFX acceleration is
@@ -19,7 +19,7 @@ Change-Id: Id1729aca89b6dff22c865ae913da044c0e7c7f31
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/packages/SystemUI/shared/src/com/android/systemui/shared/system/BlurUtils.java b/packages/SystemUI/shared/src/com/android/systemui/shared/system/BlurUtils.java
-index 61b0e4d90..84bb0730e 100644
+index 61b0e4d9024f..84bb0730e920 100644
 --- a/packages/SystemUI/shared/src/com/android/systemui/shared/system/BlurUtils.java
 +++ b/packages/SystemUI/shared/src/com/android/systemui/shared/system/BlurUtils.java
 @@ -29,7 +29,7 @@ public abstract class BlurUtils {
@@ -32,18 +32,15 @@ index 61b0e4d90..84bb0730e 100644
      }
  }
 diff --git a/packages/SystemUI/src/com/android/systemui/statusbar/BlurUtils.kt b/packages/SystemUI/src/com/android/systemui/statusbar/BlurUtils.kt
-index 6bbd4a504..27e42d672 100644
+index 6d04c27b9e5e..8fa08459f51e 100644
 --- a/packages/SystemUI/src/com/android/systemui/statusbar/BlurUtils.kt
 +++ b/packages/SystemUI/src/com/android/systemui/statusbar/BlurUtils.kt
-@@ -141,7 +141,7 @@ open class BlurUtils @Inject constructor(
-      * @return {@code true} when supported.
-      */
-     open fun supportsBlursOnWindows(): Boolean {
--        return CROSS_WINDOW_BLUR_SUPPORTED && ActivityManager.isHighEndGfx() &&
-+        return CROSS_WINDOW_BLUR_SUPPORTED && !ActivityManager.isLowRamDeviceStatic() &&
-                 crossWindowBlurListeners.isCrossWindowBlurEnabled() &&
-                 !SystemProperties.getBoolean("persist.sysui.disableBlur", false)
+@@ -203,7 +203,7 @@ constructor(
+ 
+     private fun supportsBlursOnWindowsBase(): Boolean {
+         return CROSS_WINDOW_BLUR_SUPPORTED &&
+-            ActivityManager.isHighEndGfx() &&
++            !ActivityManager.isLowRamDeviceStatic() &&
+             !SystemProperties.getBoolean("persist.sysui.disableBlur", false)
      }
--- 
-2.47.0
-
+ 
