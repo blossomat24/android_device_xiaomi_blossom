@@ -21,9 +21,6 @@ $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 # include private signing keys
 -include vendor/niigo-priv/keys/keys.mk
 
-# always nuke audiofx
-NUKE_AUDIOFX := true
-
 # Maintainer
 MIKU_MASTER := fukiame
 
