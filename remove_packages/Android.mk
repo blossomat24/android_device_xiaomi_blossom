@@ -36,10 +36,6 @@ ifneq ($(MIKU_GAPPS),true)
 LOCAL_OVERRIDES_PACKAGES += \
     Calendar
 endif
-ifeq ($(TARGET_SHIP_GLIMPSE),true)
-LOCAL_OVERRIDES_PACKAGES += \
-    Gallery2
-endif
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
