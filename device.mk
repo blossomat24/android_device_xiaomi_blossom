@@ -390,11 +390,6 @@ PRODUCT_PACKAGES += \
     FOSSBrowser
 endif
 
-ifeq ($(TARGET_SHIP_GLIMPSE),true)
-PRODUCT_PACKAGES += \
-    Glimpse
-endif
-
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/seccomp/,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
