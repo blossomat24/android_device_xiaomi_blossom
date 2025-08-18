@@ -378,11 +378,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.mobiledata=false
 
-# Miku UI - Performance mode
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.perfmode=true \
-    ro.perf.cluster1=0
-
 # Miku UI (not really) - optional apps
 # these shouldve been in source but eh
 ifeq ($(TARGET_SHIP_FOSSBROWSER),true)
