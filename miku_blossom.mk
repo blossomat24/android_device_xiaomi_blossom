@@ -21,9 +21,6 @@ $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 # include private signing keys
 -include vendor/niigo-priv/keys/keys.mk
 
-# local patch - ship FOSS Browser
-TARGET_SHIP_FOSSBROWSER := true
-
 # always nuke audiofx
 NUKE_AUDIOFX := true
 
