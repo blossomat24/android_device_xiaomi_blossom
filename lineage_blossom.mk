@@ -27,6 +27,9 @@ $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 # always nuke audiofx
 NUKE_AUDIOFX := true
 
+# Matlog
+TARGET_DISABLE_MATLOG := true
+
 # always append time of day
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
