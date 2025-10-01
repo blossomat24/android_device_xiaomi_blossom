@@ -68,6 +68,9 @@ ifeq ($(MIKU_GAPPS),true)
 GMS_MAKEFILE=gms_minimal.mk
 endif
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_blossom)
+
 # HACK: Avoid usb crash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     persist.adb.nonblocking_ffs=0 \
