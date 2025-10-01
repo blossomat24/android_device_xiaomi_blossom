@@ -77,7 +77,7 @@ function blob_fixup() {
             ;;
         vendor/bin/hw/mtkfusionrild)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
+            grep -q "libutils-v32.so" "${2}" || "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
             ;;
         *)
             return 1
