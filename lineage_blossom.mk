@@ -41,6 +41,10 @@ AXION_PROCESSOR := Mediatek_Helio_G25_/_G35
 
 # Maintainer
 AXION_MAINTAINER := fukiame
+
+# Perf anim override
+PERF_ANIM_OVERRIDE := true
+
 # AxionAOSP flags end
 
 PRODUCT_NAME := lineage_blossom
