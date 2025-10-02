@@ -395,6 +395,12 @@ PRODUCT_PACKAGES += \
     FOSSBrowser
 endif
 
+ifeq ($(TARGET_SHIP_LOS_BASICS),true)
+PRODUCT_PACKAGES += \
+    Glimpse \
+    Jelly
+endif
+
 PRODUCT_LOCALES += \
     vi_VN
 
