@@ -42,6 +42,9 @@ AXION_MAINTAINER := fukiame
 # Perf anim override
 PERF_ANIM_OVERRIDE := true
 
+# LOS apps
+TARGET_INCLUDES_LOS_PREBUILTS := true
+
 # AxionAOSP flags end
 
 PRODUCT_NAME := lineage_blossom
