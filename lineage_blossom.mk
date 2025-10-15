@@ -45,6 +45,10 @@ PERF_ANIM_OVERRIDE := true
 # LOS apps
 TARGET_INCLUDES_LOS_PREBUILTS := true
 
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+
 # AxionAOSP flags end
 
 PRODUCT_NAME := lineage_blossom
