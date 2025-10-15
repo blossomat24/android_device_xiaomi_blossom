@@ -409,7 +409,8 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_LOCALES += \
-    vi_VN
+    vi_VN \
+    id_ID
 
 # Seccomp
 PRODUCT_COPY_FILES += \
