@@ -33,6 +33,11 @@ TARGET_DISABLE_MATLOG := true
 # always append time of day
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 PRODUCT_NAME := voltage_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
