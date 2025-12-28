@@ -1,2 +1,38 @@
 on boot
     stop console
+
+# Set Attestation props for each blossom device
+on property:ro.boot.hwname=dandelion
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation dandelion
+    setprop ro.product.name_for_attestation "Redmi 9A"
+    setprop ro.product.model_for_attestation "Redmi 9A"
+
+on property:ro.boot.hwname=angelica
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation angelica
+    setprop ro.product.name_for_attestation "Redmi 9C"
+    setprop ro.product.model_for_attestation "Redmi 9C"
+
+property:ro.boot.hwname=angelican
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation angelican
+    setprop ro.product.name_for_attestation "Poco C3"
+    setprop ro.product.model_for_attestation "Poco C3"
+
+on property:ro.boot.hwname=angelican
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation anangelican
+    setprop ro.product.name_for_attestation "Redmi 9C NFC"
+    setprop ro.product.model_for_attestation "Redmi 9C NFC"
+
+on property:ro.boot.hwname=cattail
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation cattail
+    setprop ro.product.name_for_attestation "Redmi 9 India"
+    setprop ro.product.model_for_attestation "Redmi 9 India"
