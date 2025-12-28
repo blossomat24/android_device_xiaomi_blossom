@@ -15,8 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/blossom/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit mindthegapps stuff.
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
@@ -33,7 +33,7 @@ TARGET_DISABLE_MATLOG := true
 # always append time of day
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
-PRODUCT_NAME := lineage_blossom
+PRODUCT_NAME := voltage_blossom
 PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
