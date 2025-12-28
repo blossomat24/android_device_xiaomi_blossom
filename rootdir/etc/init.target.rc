@@ -1,6 +1,10 @@
 on boot
     stop console
 
+on init
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 # Set Attestation props for each blossom device
 on property:ro.boot.hwname=dandelion
     setprop ro.product.manufacturer_for_attestation Xiaomi
