@@ -1,0 +1,33 @@
+From 23b0a882adce2e9c4ae6c12655646d76c96f60c8 Mon Sep 17 00:00:00 2001
+From: Crave <aosp@crave.io>
+Date: Mon, 29 Dec 2025 20:14:02 +0000
+Subject: [PATCH] blossom: add new tzdate certificate
+
+err: "com.android.tzdata" depends on undefined module
+"com.android.tzdata.certificate.override"
+
+Change-Id: I7f3a79ba1d2451966e4fc7d55577e65bd008f608
+Signed-off-by: Crave <aosp@crave.io>
+---
+ apex/Android.bp | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/apex/Android.bp b/apex/Android.bp
+index a782005e..7eb0cfb4 100644
+--- a/apex/Android.bp
++++ b/apex/Android.bp
+@@ -58,6 +58,11 @@ module_exports {
+     ],
+ }
+ 
++android_app_certificate {
++    name: "com.android.tzdata.certificate.override",
++    certificate: "com.android.tzdata",
++}
++
+ // The definition for the real (not test) tzdata APEX.
+ apex {
+     name: "com.android.tzdata",
+-- 
+2.51.0
+
