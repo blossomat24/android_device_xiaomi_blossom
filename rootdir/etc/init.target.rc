@@ -20,7 +20,7 @@ on property:ro.boot.hwname=angelica
     setprop ro.product.name_for_attestation "Redmi 9C"
     setprop ro.product.model_for_attestation "Redmi 9C"
 
-property:ro.boot.hwname=angelican
+on property:ro.boot.hwname=angelican
     setprop ro.product.manufacturer_for_attestation Xiaomi
     setprop ro.product.brand_for_attestation Redmi
     setprop ro.product.device_for_attestation angelican
