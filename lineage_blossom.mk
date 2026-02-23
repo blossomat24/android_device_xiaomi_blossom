@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/blossom/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit mindthegapps stuff.
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Include private signing keys
 -include vendor/extra/product.mk
 
