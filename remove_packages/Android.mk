@@ -10,7 +10,19 @@ LOCAL_OVERRIDES_PACKAGES := \
     Maps \
     PrebuiltGmail \
     QuickSearchBox \
-    YouTube
+    YouTube \
+    Music \
+    MusicKotlin \
+    SetupWizard \
+    GoogleContactsSyncAdapter \
+    GoogleCalendarSyncAdapter \
+    GooglePartnerSetup \
+    GoogleTTS \
+    googlequicksearchbox \
+    AudioFX \
+    MusicFX \
+    Updater
+
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
