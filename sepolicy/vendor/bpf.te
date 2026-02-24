@@ -1,0 +1,3 @@
+# Allow bpf capability
+allow kernel self:capability2 bpf;
+allow kernel self:cap2_userns bpf;
